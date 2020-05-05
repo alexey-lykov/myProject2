@@ -13,17 +13,17 @@ pool:
 #  vmImage: 'DESKTOP-MLO3EF6'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '12.x'
-  displayName: 'Install Node.js'
+#- task: NodeTool@0
+#  inputs:
+#    versionSpec: '12.x'
+#  displayName: 'Install Node.js'
+
+#- script: |
+#    npm install -g imp-central-impt
+#    npm install -g Builder
+#  displayName: 'npm install and build'
 
 - script: |
-    npm install -g imp-central-impt
-    npm install -g Builder
-  displayName: 'npm install and build'
-
-- script: |
-    ls
+    dir
     impt test run
   displayName: 'tests'
