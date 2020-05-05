@@ -20,3 +20,7 @@ steps:
     npm install -g imp-central-impt
     npm install -g Builder
   displayName: 'npm install and build'
+
+- script: |
+    impt test run
+  displayName: 'tests'
