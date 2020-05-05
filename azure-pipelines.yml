@@ -7,8 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: "vs2017-win2016"
-#  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: NodeTool@0
@@ -22,5 +21,6 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    ls
     impt test run
   displayName: 'tests'
