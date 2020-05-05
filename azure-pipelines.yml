@@ -18,5 +18,4 @@ steps:
 - script: |
     npm install -g imp-central-impt
     npm install -g Builder
-    impt test run --output json
   displayName: 'npm install and build'
