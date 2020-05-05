@@ -1,6 +1,5 @@
 {
-  "deviceGroupId": "3e4a50eb-0fc8-cab6-41b9-3e02ced9270e",
-  "deviceGroupName" : "impFarm K",
+  "deviceGroupId": "b54c1163-9987-f348-ecb6-96f04a0c7eda",
   "timeout": 300,
   "stopOnFail": false,
   "allowDisconnect": true,
@@ -10,6 +9,7 @@
     "*.test.nut",
     "tests/**/*.test.nut"
   ],
+  "githubConfig": "github.conf",
   "deviceFile": "./tests/DeviceIncludes.nut",
   "agentFile": "./tests/AgentIncludes.nut"
 }
